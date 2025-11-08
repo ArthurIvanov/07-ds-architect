@@ -8,7 +8,7 @@ function App() {
 		<>
 			<GlobalStyle />
 			<main>
-				<Placeholder text="Привет мир!" />
+				<Placeholder text="Привет ребята!" />
 			</main>
 		</>
 	);
