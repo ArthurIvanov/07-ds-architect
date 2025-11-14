@@ -119,23 +119,6 @@ declare module "styled-components" {
 						active: string;
 					};
 				};
-				critical: {
-					calm: {
-						enabled: string;
-						hover: string;
-						active: string;
-					};
-					loud: {
-						enabled: string;
-						hover: string;
-						active: string;
-					};
-					bold: {
-						enabled: string;
-						hover: string;
-						active: string;
-					};
-				};
 			};
 			border: {
 				disabled: string;
@@ -200,6 +183,9 @@ declare module "styled-components" {
 				};
 				grey: {
 					calm: {
+						enabled: string;
+					};
+					loud: {
 						enabled: string;
 					};
 					bold: {
@@ -273,32 +259,130 @@ declare module "styled-components" {
 				};
 			};
 			link: {
-				calm: {
-					enabled: string;
-					hover: string;
-					active: string;
+				calm: { enabled: string; hover: string; active: string };
+				loud: { enabled: string; hover: string; active: string };
+				onLight: { enabled: string; hover: string; active: string };
+				onDark: { enabled: string; hover: string; active: string };
+				inverted: { enabled: string; hover: string; active: string };
+			};
+		};
+		typography: {
+			fontFamily: {
+				heading: string;
+				text: string;
+				monospace: string;
+			};
+			fontSize: {
+				heading: {
+					h1: string;
+					h2: string;
+					h3: string;
+					h4: string;
+					h5: string;
+					h6: string;
 				};
-				loud: {
-					enabled: string;
-					hover: string;
-					active: string;
+				text: {
+					base: string;
+					small: string;
+					extraSmall: string;
 				};
-				onLight: {
-					enabled: string;
-					hover: string;
-					active: string;
-				};
-				onDark: {
-					enabled: string;
-					hover: string;
-					active: string;
-				};
-				inverted: {
-					enabled: string;
-					hover: string;
-					active: string;
+				component: {
+					base: string;
+					small: string;
+					extraSmall: string;
 				};
 			};
+			lineHeight: {
+				heading: {
+					h1: string;
+					h2: string;
+					h3: string;
+					h4: string;
+					h5: string;
+					h6: string;
+				};
+				text: {
+					base: string;
+					small: string;
+					extraSmall: string;
+				};
+				component: {
+					base: string;
+					small: string;
+					extraSmall: string;
+				};
+			};
+			fontWeight: {
+				regular: string;
+				medium: string;
+				semiBold: string;
+			};
+		};
+		spacing: {
+			gap: {
+				noGap: string;
+				closest: string;
+				close: string;
+				related: string;
+				grouped: string;
+				subSection: string;
+				section: string;
+			};
+			inner: {
+				noGap: string;
+				closest: string;
+				close: string;
+				related: string;
+				grouped: string;
+			};
+			outer: {
+				related: string;
+				grouped: string;
+				subSection: string;
+				section: string;
+			};
+			padding: {
+				compact: string;
+				default: string;
+				relaxed: string;
+				large: string;
+			};
+			height: {
+				xxxxSmall: string;
+				xxxSmall: string;
+				xxSmall: string;
+				xSmall: string;
+				small: string;
+				base: string;
+				large: string;
+				xLarge: string;
+				xxLarge: string;
+			};
+		};
+		borderRadius: {
+			micro: string;
+			componentInner: string;
+			componentBase: string;
+			secionInner: string;
+			sectionBase: string;
+		};
+		shadows: {
+			surface: {
+				elevated: string;
+				hover: string;
+			};
+			overlay: {
+				content: string;
+				tooltip: string;
+				drawer: string;
+				modal: string;
+				notifications: string;
+			};
+		};
+		zIndices: {};
+		focus: string;
+		animation: {
+			base: string;
 		};
 	}
 }
