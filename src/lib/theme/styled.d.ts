@@ -358,6 +358,17 @@ declare module "styled-components" {
 				xLarge: string;
 				xxLarge: string;
 			};
+			width: {
+				xxxxSmall: string;
+				xxxSmall: string;
+				xxSmall: string;
+				xSmall: string;
+				small: string;
+				base: string;
+				large: string;
+				xLarge: string;
+				xxLarge: string;
+			};
 		};
 		borderRadius: {
 			micro: string;

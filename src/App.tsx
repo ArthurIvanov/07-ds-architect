@@ -1,15 +1,20 @@
 import { ThemeProvider } from "styled-components";
 import React from "react";
-import { GlobalStyle, Placeholder, lightTheme, darkTheme } from "./lib";
+import {
+	GlobalStyle,
+	Button,
+	ButtonLink,
+	ButtonIcon,
+	lightTheme,
+	darkTheme,
+} from "./lib";
 
 function App() {
-	const switcher = false;
+	const switcher = true;
 	return (
 		<ThemeProvider theme={switcher ? lightTheme : darkTheme}>
 			<GlobalStyle />
-			<main>
-				<Placeholder text="Styled!" />
-			</main>
+			<main></main>
 		</ThemeProvider>
 	);
 }

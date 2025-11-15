@@ -378,6 +378,17 @@ export const lightTheme: DefaultTheme = {
 			xLarge: spacers[56],
 			xxLarge: spacers[64],
 		},
+		width: {
+			xxxxSmall: spacers[4],
+			xxxSmall: spacers[8],
+			xxSmall: spacers[16],
+			xSmall: spacers[24],
+			small: spacers[32],
+			base: spacers[40],
+			large: spacers[48],
+			xLarge: spacers[56],
+			xxLarge: spacers[64],
+		},
 	},
 	borderRadius: {
 		micro: spacers[2],
