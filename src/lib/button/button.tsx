@@ -10,12 +10,39 @@ type TIconName =
 	| "close";
 
 interface IButtonProps {
+	/**
+	 * Визуальный вес компонента
+	 */
 	appearance?: "primary" | "secondary" | "onDark" | "onLight" | "inverted";
+
+	/**
+	 * Размер компонента
+	 */
 	size?: "base" | "small";
+
+	/**
+	 * Делает кнопку недоступной для взаимодействия
+	 */
 	disabled?: boolean;
+
+	/**
+	 * Отображает процесс выполнения вызванный нажатием
+	 */
 	loading?: boolean;
+
+	/**
+	 * Наполнение текстом
+	 */
 	text: string;
+
+	/**
+	 * Отображает иконку до текста
+	 */
 	iconBefore?: TIconName;
+
+	/**
+	 * Отображает иконку после текста
+	 */
 	iconAfter?: TIconName;
 }
 
@@ -72,9 +99,6 @@ const StyledButton = styled.button<IButtonProps>`
             border-color: ${props.theme.colors.border.lead.loud.active};
             color: ${props.theme.colors.link.loud.active};
         }
-
-        
-
     `}
 
     ${(props) =>
@@ -132,6 +156,9 @@ const StyledButton = styled.button<IButtonProps>`
     `}
 `;
 
+/**
+ * Используется как призыв к действию.
+ */
 export const Button: React.FC<IButtonProps> = ({
 	appearance = "primary",
 	size = "base",
